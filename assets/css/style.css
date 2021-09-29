@@ -1,0 +1,27 @@
+/*base element styling */
+html{
+  background-color: #FECF76;
+}
+body{
+  background-color: #FECF76;
+}
+strong{
+  font-size: 5vh;
+}
+/*custom class styling*/
+.jumbotronLander{
+  margin-top: 10vh;
+  background-color: #D08B5B;
+  border:solid #BE6F37 .5vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 5px 5px 10px #FEA90B;
+}
+.skillsLander{
+  margin-right: 10vw;
+  float:right;
+}
+.skillsLander img{
+  width: 5vw;
+  float: right;
+}
