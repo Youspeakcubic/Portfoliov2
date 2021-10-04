@@ -1,27 +1,56 @@
 /*base element styling */
-html{
+html {
   background-color: #FECF76;
 }
-body{
+
+body {
   background-color: #FECF76;
 }
-strong{
+
+strong {
+  color: white;
   font-size: 5vh;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #E0E0E0;
+}
+
 /*custom class styling*/
-.jumbotronLander{
+.typeWriterContainer {
+  float: right;
+}
+
+.jumbotronLander {
+  height: 70vh;
   margin-top: 10vh;
-  background-color: #D08B5B;
-  border:solid #BE6F37 .5vh;
-  display: flex;
-  justify-content: center;
+  background-color: #BE6F37;
+  border: solid #BE6F37 .5vh;
   box-shadow: 10px 5px 5px 10px #FEA90B;
 }
-.skillsLander{
-  margin-right: 10vw;
-  float:right;
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: :20vh;
 }
-.skillsLander img{
-  width: 5vw;
-  float: right;
+.skillsLander {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  background-color: #141414;
+  margin-bottom: 20vh;
+  width: 60vw;
+  height: 60vh;
+}
+
+.bustImg {
+  grid-column: 1;
+  height: 60vh;
+}
+
+.bg-dark {
+  background-color: #BE6F37 !important;
 }
