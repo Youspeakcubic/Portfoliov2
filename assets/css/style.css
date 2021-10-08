@@ -1,4 +1,4 @@
-/*base element styling */
+/*element styling */
 html {
   background-color: #FECF76;
 }
@@ -16,34 +16,35 @@ strong {
 h2 {
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
+  font-size: 3.5vh;
 }
 
-/*custom class styling*/
-.typeWriterContainer {
-  float: right;
-}
+/* class styling*/
 
+/* Jumbotron styling*/
 .jumbotronLander {
-  height: 70vh;
+  height: 63vh;
   margin-top: 10vh;
   background-color: #BE6F37;
   border: solid #BE6F37 .5vh;
-  box-shadow: 10px 5px 5px 10px #FEA90B;
+  box-shadow: 0px 2px 5px 10px #FEA90B;
+  margin-left: -15vw;
 }
-.container{
+
+.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   margin-bottom: :20vh;
 }
+
 .skillsLander {
   grid-column: 2 / 3;
   grid-row: 1;
-  background-color: #141414;
   margin-bottom: 20vh;
-  width: 60vw;
-  height: 60vh;
+  width: 50vw;
+  height: 65vh;
 }
 
 .bustImg {
@@ -53,4 +54,64 @@ h2 {
 
 .bg-dark {
   background-color: #BE6F37 !important;
+}
+
+.arrow {
+  text-align: center;
+}
+/* Links by the bust on landing jumbotron */
+.landingLinks {
+  position: absolute;
+  left: 4vw;
+  top: 20vh;
+}
+
+.link {
+  height: 10vh;
+  display: block;
+  background-color: #FECF76;
+  margin: .5vh;
+  padding: .5vh;
+  border-radius: 20px;
+}
+/* hr seperator between sections*/
+.seperator {
+  border-top: 1vh dotted #BE6F37;
+  width: 6vw;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+/*projects slanted styling */
+.slantSection1 {
+  padding: 50px 0;
+  background-color: #BE6F37;
+  overflow: visible;
+  z-index: 1;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  opacity: .85;
+}
+
+.slantSection1:before, .slantSection1:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+  box-shadow: 0 -5px 40px -5px #FEA90B;
+}
+
+.slantSection1:after {
+  top: 0;
+  box-shadow: 0 10px 20px -5px #FEA90B;
+  transform-origin: left top;
+  transform: skewY(3deg);
+}
+.smallProjects{
+  display:inline;
 }
