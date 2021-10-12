@@ -36,7 +36,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" onClick="document.getElementById('projects').scrollIntoView();" >Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Education</a>
@@ -55,10 +55,9 @@
     <div class="container">
       <div class="skillsLander">
         <div class="landingLinks">
-          <a><img class="link" src="assets\images\githubIco2.png" </a>
+          <a href="https://github.com/Youspeakcubic" target="_blank"><img class="link" src="assets\images\githubIco2.png" </a>
             <br />
-            <a><img class="link" src="assets\images\resumeico.png" </a>
-              <a><img src="" </a>
+          <a href="assets\images\resume.pdf" target="_blank"><img class="link" src="assets\images\resumeico.png" </a>
         </div>
         <div id="typeWriterContainer"></div>
         <h2>I was always the kid on his computer during lunch and making electronics, now as an adult that passion has only grown. I love to create seamless products, and innovative functional applications. Currently taking courses in and outside of
@@ -77,47 +76,91 @@
 
   <hr class="seperator" />
   <!-- project section -->
-  <div class="slantSection1">
+  <div id="projects" class="slantSection1">
+    <h1>My recent projects:</h1>
     <div class="card mb-3">
-      <img class="card-img-top" src="..." alt="Card image cap">
+      <img class="card-img-top spanningImage" src="assets\images\paretOS.gif" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">paretOS</h5>
+        <p class="card-text">Open source web application meant to help new developers connect with peers and learn new technologies and find jobs. I worked with this team of ~10 to make the application more responsive and help with some navbar layout issues on mobile and tablet viewports.</p>
+        <a href="https://www.paret0.com/" target="_blank" class="btn btn-primary">View live</a>
+        <a href="https://github.com/mikhael28/paretOS/pull/61" target="_blank" class="btn btn-primary">View Code</a>
       </div>
     </div>
-    <div class="smallProjects">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="cardContainer">
+      <div class="smallProjects">
+        <div class="card " style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\Scoreboard.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">React scoreboard</h5>
+            <p class="card-text">This is a project i made in react using state to manage multiple players and their scores in a game. You can add and subtract scores and add or delete players.</p>
+            <a href="https://youspeakcubic.github.io/React-scoreboard/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/React-scoreboard" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="smallProjects">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\meal.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Random Meal generator</h5>
+            <p class="card-text">This web application was made using just javascript. I used the new fetch feature of javascript to pull from the meal database api, i then took the json data and created elements.</p>
+            <a href="https://youspeakcubic.github.io/Random-Meal-Generator/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/Random-Meal-Generator" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="smallProjects">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\pet.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pocket pets</h5>
+            <p class="card-text">A pet simulator made in javascript. I took this project as a chance to learn keyframe animations and further manipulating the dom through adding animation classes.</p>
+            <a href="https://youspeakcubic.github.io/Pocket-pets/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/Pocket-pets" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="smallProjects">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\piano.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Javascript Piano</h5>
+            <p class="card-text">Using event listeners i had javascript wait for a certain key to be pressed and play a sound. Through this method i made a functional piano.</p>
+            <a href="https://youspeakcubic.github.io/pianoJS/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/pianoJS" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="smallProjects">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\weather.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">What should i wear?</h5>
+            <p class="card-text">Much like the random meal generator this web application pulls using the fetch api feature of javascript, however i learned to take input using this project through queries.</p>
+            <a href="https://youspeakcubic.github.io/Whatshouldiweartoday/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/Whatshouldiweartoday" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="smallProjects">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top cardImg" src="assets\images\signup.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Sign up form</h5>
+            <p class="card-text">A simple sign up form i used to learn the basics of AJAX, It checks data inputted to see if it is valid and injects a seperate html file into the site based on failure or success.</p>
+            <a href="https://youspeakcubic.github.io/sign-up-demo/" target="_blank" class="btn btn-primary">View live</a>
+            <a href="https://github.com/Youspeakcubic/sign-up-demo" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="smallProjects">
-      <div class="card smallProjects" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="smallProjects">
-      <div class="card smallProjects" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
+    <hr class="seperator" />
   </div>
-
+  <!-- education section -->
+  <div class="slantsection2">
+      <img src="assets\images\sitting.png" alt="sitting img">
+  </div>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="assets\javascript\typewriter.js"></script>
 </body>
