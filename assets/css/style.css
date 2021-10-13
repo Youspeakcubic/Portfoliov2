@@ -21,6 +21,16 @@ h2 {
   color: #E0E0E0;
   font-size: 3.5vh;
 }
+ul{
+  margin-left: 2vw;
+}
+li{
+  color: #E0E0E0;
+}
+p{
+  font-family: 'Oswald', sans-serif;
+  color: #E0E0E0;
+}
 
 /* class styling*/
 
@@ -136,6 +146,12 @@ height:40vh;
   background-color: #FECF76;
   border: 1px solid #FEA90B;
 }
+.card-title{
+  color:#E0E0E0;
+}
+.card-text{
+  color:#E0E0E0;
+}
 /*Education section styling */
 .slantsection2 {
   padding: 50px 0;
@@ -143,9 +159,9 @@ height:40vh;
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 300%;
+  top: 260%;
   width: 100%;
-  height:120vh;
+  height:80vh;
   opacity: .85;
 }
 
@@ -167,4 +183,17 @@ height:40vh;
   /*box-shadow: 10px 10px 10px 10px #FEA90B;*/
   transform-origin: right top;
   transform: skewY(3deg);
+}
+.educationImg{
+  height:70vh;
+  position: relative;
+  left:70vw;
+  bottom:105vh;
+  z-index: 20;
+}
+.aboutTab{
+  position: relative;
+  bottom:79vh;
+  left:35vw;
+  width:25vw;
 }
