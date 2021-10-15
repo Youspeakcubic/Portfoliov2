@@ -1,6 +1,7 @@
 /*element styling */
 html {
   background-color: #FECF76;
+overflow-x:hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ strong {
 h1{
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
+  margin-left: 1vw;
 }
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -40,7 +42,7 @@ p{
   margin-top: 10vh;
   background-color: #BE6F37;
   border: solid #BE6F37 .5vh;
-  box-shadow: 0px 2px 5px 10px #FEA90B;
+  box-shadow: 0 -5px 40px -5px #FEA90B;
   margin-left: -15vw;
 }
 
@@ -94,6 +96,63 @@ p{
   margin-top: 15vh;
   margin-bottom: 15vh;
 }
+/* Skills carousel*/
+section img {
+  display: block;
+  width: 50%;
+}
+
+section {
+  width: 200%;
+  overflow: hidden;
+  background-color: #BE6F37;
+  box-shadow: 0 -5px 40px -5px #FEA90B;
+}
+
+article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 20s linear infinite;
+}
+
+article.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+section div {
+  width: 100%;
+}
+
+section ul {
+  display: flex;
+  background: #BE6F37;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+section li {
+  width: 100%;
+  background: #BE6F37;
+}
+
+section li:nth-child(2) {
+  background: #BE6F37;
+}
+
+section li:nth-child(3) {
+  background: #BE6F37;
+}
+
+@keyframes "bannermove" {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 /*projects slanted styling */
 .slantSection1 {
   padding: 50px 0;
@@ -101,7 +160,7 @@ p{
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 110%;
+  top: 180%;
   width: 100%;
   height:120vh;
   opacity: .85;
@@ -152,6 +211,10 @@ height:40vh;
 .card-text{
   color:#E0E0E0;
 }
+.topProject{
+  margin-left: 1vw;
+  margin-right:1vw;
+}
 /*Education section styling */
 .slantsection2 {
   padding: 50px 0;
@@ -159,7 +222,7 @@ height:40vh;
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 260%;
+  top: 325%;
   width: 100%;
   height:80vh;
   opacity: .85;
