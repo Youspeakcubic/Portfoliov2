@@ -26,6 +26,7 @@ h2 {
 h3{
   font-family: 'Open Sans Condensed', sans-serif;
   color: #E0E0E0;
+  font-size: 3vh;
 }
 ul{
   margin-left: 2vw;
@@ -36,6 +37,9 @@ li{
 p{
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
+}
+a{
+  color:#E0E0E0;
 }
 
 /* class styling*/
@@ -261,4 +265,32 @@ height:40vh;
   bottom:38vh;
   left:35vw;
   width:25vw;
+}
+/* contact section */
+.contactForm{
+  position: absolute;
+  top:430vh;
+  background: #BE6F37;
+  width: 100%;
+  padding-top: 2vh;
+ box-shadow: 10px 10px 10px 10px #FEA90B
+}
+.contactAreas{
+  border-right:1px solid rgba(0,0,0,.1);
+  width: 80%;
+}
+.form-row{
+  margin-right: .5vw;
+}
+.contactLinks{
+  position:absolute;
+  top:8vh;
+  left:80vw;
+}
+
+.contactForm h3{
+  display: inline-block;
+}
+.contactImg{
+  height:3vh;
 }
