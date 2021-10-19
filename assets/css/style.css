@@ -1,7 +1,7 @@
 /*element styling */
 html {
   background-color: #FECF76;
-overflow-x:hidden;
+overflow-x: hidden;
 }
 
 body {
@@ -22,6 +22,10 @@ h2 {
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
   font-size: 3.5vh;
+}
+h3{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #E0E0E0;
 }
 ul{
   margin-left: 2vw;
@@ -101,14 +105,13 @@ section img {
   display: block;
   width: 50%;
 }
-
 section {
-  width: 200%;
+  width: 100%;
   overflow: hidden;
   background-color: #BE6F37;
   box-shadow: 0 -5px 40px -5px #FEA90B;
+  text-align: center;
 }
-
 article {
   display: flex;
   width: 200%;
@@ -133,7 +136,7 @@ section ul {
 }
 
 section li {
-  width: 100%;
+  width: 80%;
   background: #BE6F37;
 }
 
@@ -242,21 +245,20 @@ height:40vh;
 }
 
 .slantsection2:after {
-  top: 0;
   /*box-shadow: 10px 10px 10px 10px #FEA90B;*/
   transform-origin: right top;
   transform: skewY(3deg);
 }
 .educationImg{
   height:70vh;
-  position: relative;
+  position: absolute;
   left:70vw;
-  bottom:105vh;
+  bottom:0vh;
   z-index: 20;
 }
 .aboutTab{
-  position: relative;
-  bottom:79vh;
+  position: absolute;
+  bottom:38vh;
   left:35vw;
   width:25vw;
 }
