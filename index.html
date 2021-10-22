@@ -11,8 +11,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets\css\style.css">
-  </link>
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="assets\css\mobile.css" />
+  <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width:1100px)" href="assets\css\tablet.css" />
+  <link rel="stylesheet" media='screen and (min-width:1101px) and (max-width:1850px)' href="assets\css\desktopsml.css" />
+  <link rel='stylesheet' media='screen and (min-width: 1860px)' href='assets\css\desktopLrg.css' />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
       <img src="assets\images\logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      Anthony De la Torre- Web Developer
+       Anthony De la Torre- Web Developer
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -121,7 +123,7 @@
     </div>
     <div class="cardContainer">
       <div class="smallProjects">
-        <div class="card " style="width: 18rem;">
+        <div class="card mobileCard">
           <img class="card-img-top cardImg" src="assets\images\Scoreboard.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">React scoreboard</h5>
@@ -132,8 +134,8 @@
         </div>
       </div>
       <div class="smallProjects">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top cardImg" src="assets\images\meal.gif" alt="Card image cap">
+        <div class="card mobileCard">
+          <img class="card-img-top cardImg" id="mealImg" src="assets\images\meal.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Random Meal generator</h5>
             <p class="card-text">This web application was made using just javascript. I used the new fetch feature of javascript to pull from the meal database api, i then took the json data and created elements.</p>
@@ -143,7 +145,7 @@
         </div>
       </div>
       <div class="smallProjects">
-        <div class="card" style="width: 18rem;">
+        <div class="card mobileCard">
           <img class="card-img-top cardImg" src="assets\images\pet.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Pocket pets</h5>
@@ -154,7 +156,7 @@
         </div>
       </div>
       <div class="smallProjects">
-        <div class="card" style="width: 18rem;">
+        <div class="card mobileCard">
           <img class="card-img-top cardImg" src="assets\images\piano.PNG" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Javascript Piano</h5>
@@ -165,7 +167,7 @@
         </div>
       </div>
       <div class="smallProjects">
-        <div class="card" style="width: 18rem;">
+        <div class="card mobileCard">
           <img class="card-img-top cardImg" src="assets\images\weather.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">What should i wear?</h5>
@@ -176,7 +178,7 @@
         </div>
       </div>
       <div class="smallProjects">
-        <div class="card" style="width: 18rem;">
+        <div class="card mobileCard">
           <img class="card-img-top cardImg" src="assets\images\signup.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Sign up form</h5>
@@ -285,13 +287,13 @@
         <div>
           <a href="https://www.linkedin.com/in/anthony-de-la-torre-807895205/">
             <img class="contactImg" src="assets\images\emailico.png" />
-            <h3>Email</h>
+            <h3>delantho327@gmail.com</h>
           </a>
         </div>
         <div>
           <a href="https://www.linkedin.com/in/anthony-de-la-torre-807895205/">
             <img class="contactImg" src="assets\images\phoneico.jpg" />
-            <h3>Phone #</h>
+            <h3>(305) 438-1417</h>
           </a>
         </div>
       </div>
