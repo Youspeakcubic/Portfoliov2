@@ -1,7 +1,8 @@
-/*element styling */
+  /*element styling */
 html {
   background-color: #FECF76;
-overflow-x: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,7 @@ h1{
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
   margin-left: 1vw;
+  font-size: 8vw;
 }
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -33,6 +35,7 @@ ul{
 }
 li{
   color: #E0E0E0;
+  font-size: 2.5vw;
 }
 p{
   font-family: 'Oswald', sans-serif;
@@ -40,6 +43,9 @@ p{
 }
 a{
   color:#E0E0E0;
+}
+a:hover{
+  cursor:pointer;
 }
 
 /* class styling*/
@@ -49,6 +55,9 @@ a{
 }
 .navbar-toggler-icon{
   width:1.2rem
+}
+.active:hover{
+  cursor:pointer;
 }
 /* Jumbotron styling*/
 .jumbotronLander {
@@ -110,6 +119,9 @@ a{
   width: 15vw;
   margin-top: 15vh;
   margin-bottom: 15vh;
+}
+#projectSeperator{
+  margin-top: 30vh;
 }
 /* Skills carousel*/
 section img {
@@ -176,7 +188,7 @@ section li:nth-child(3) {
   position: absolute;
   top: 220%;
   width: 100%;
-  height:300vh;
+  height:290vh;
   opacity: .85;
 }
 
@@ -243,11 +255,11 @@ height:40vh;
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 325%;
+  top: 550%;
   width: 100%;
-  height:80vh;
+  height:85vh;
   opacity: .85;
-  display:none; /* Remove later;*/
+
 }
 
 .slantsection2:before, .slantsection2:after {
@@ -260,11 +272,11 @@ height:40vh;
   top: 0;
   transform-origin: right top;
   transform: skewY(-3deg);
-  /*box-shadow: 10px 10px 40px 10px #FEA90B;*/
+  box-shadow: 10px 10px 50px 10px #FEA90B;
 }
 
 .slantsection2:after {
-  /*box-shadow: 10px 10px 10px 10px #FEA90B;*/
+box-shadow:  0 -6px -4px 4px rgba(0,0,0,0.7);
   transform-origin: right top;
   transform: skewY(3deg);
 }
@@ -274,18 +286,19 @@ height:40vh;
   left:70vw;
   bottom:0vh;
   z-index: 20;
+  display:none;
 }
 .aboutTab{
   position: absolute;
   bottom:38vh;
   left:35vw;
   width:25vw;
-  display:none; /* remove later */
+  display:none;
 }
 /* contact section */
 .contactForm{
   position: absolute;
-  top:600vh;
+  top:660vh;
   background: #BE6F37;
   width: 100%;
   padding-top: 2vh;
@@ -293,19 +306,20 @@ height:40vh;
 }
 .contactAreas{
   border-right:1px solid rgba(0,0,0,.1);
-  width: 80%;
+  width: 60%;
 }
 .form-row{
   margin-right: .5vw;
 }
 .contactLinks{
   position:absolute;
-  top:8vh;
-  left:80vw;
+  top:9vh;
+  left:62vw;
 }
 
 .contactForm h3{
   display: inline-block;
+  font-size: 5vw;
 }
 .contactImg{
   height:3vh;
