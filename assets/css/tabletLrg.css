@@ -10,19 +10,18 @@ body {
 
 strong {
   color: white;
-  font-size: 5vh;
+  font-size: 3vh;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 h1{
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
   margin-left: 1vw;
-  font-size: 2vw;
 }
 h2 {
   font-family: 'Oswald', sans-serif;
   color: #E0E0E0;
-  font-size: 3.5vh;
+  font-size: 2vh;
 }
 h3{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -34,7 +33,6 @@ ul{
 }
 li{
   color: #E0E0E0;
-  font-size: 1vw;
 }
 p{
   font-family: 'Oswald', sans-serif;
@@ -48,7 +46,7 @@ a{
 
 /* Jumbotron styling*/
 .jumbotronLander {
-  height: 63vh;
+  height: 50vh;
   margin-top: 10vh;
   background-color: #BE6F37;
   border: solid #BE6F37 .5vh;
@@ -74,7 +72,7 @@ a{
 
 .bustImg {
   grid-column: 1;
-  height: 60vh;
+  height: 40vh;
 }
 
 .bg-dark {
@@ -92,7 +90,7 @@ a{
 }
 
 .link {
-  height: 10vh;
+  height: 5vh;
   display: block;
   background-color: #FECF76;
   margin: .5vh;
@@ -102,7 +100,7 @@ a{
 /* hr seperator between sections*/
 .seperator {
   border-top: 1vh dotted #BE6F37;
-  width: 6vw;
+  width: 15vw;
   margin-top: 15vh;
   margin-bottom: 15vh;
 }
@@ -201,17 +199,14 @@ section li:nth-child(3) {
 .card{
   background-color: #9E5D2E;
 }
-.mobileCard {
-  width: 12rem;
+.mobileCard{
+  width: 18rem !important;
 }
 .cardContainer{
 text-align: center;
 }
 .spanningImage{
 height:40vh;
-}
-.cardImg{
-  height:10vh;;
 }
 .btn{
   background-color: #FECF76;
@@ -222,7 +217,7 @@ height:40vh;
 }
 .card-text{
   color:#E0E0E0;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 .topProject{
   margin-left: 1vw;
@@ -235,9 +230,9 @@ height:40vh;
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 345%;
+  top: 340%;
   width: 100%;
-  height:90vh;
+  height:60vh;
   opacity: .85;
 }
 
@@ -260,22 +255,22 @@ height:40vh;
   transform: skewY(3deg);
 }
 .educationImg{
-  height:70vh;
+  height:50vh;
   position: absolute;
-  left:70vw;
+  left:60vw;
   bottom:0vh;
   z-index: 20;
 }
 .aboutTab{
   position: absolute;
-  bottom:13vh;
-  left:35vw;
+  bottom:15vh;
+  left:45vw;
   width:25vw;
 }
 /* contact section */
 .contactForm{
   position: absolute;
-  top:460vh;
+  top:420vh;
   background: #BE6F37;
   width: 100%;
   padding-top: 2vh;
@@ -283,7 +278,7 @@ height:40vh;
 }
 .contactAreas{
   border-right:1px solid rgba(0,0,0,.1);
-  width: 80%;
+  width: 60%;
 }
 .form-row{
   margin-right: .5vw;
@@ -291,7 +286,7 @@ height:40vh;
 .contactLinks{
   position:absolute;
   top:8vh;
-  left:80vw;
+  left:60vw;
 }
 
 .contactForm h3{

@@ -176,7 +176,7 @@ section li:nth-child(3) {
   position: absolute;
   top: 180%;
   width: 100%;
-  height:120vh;
+  height:125vh;
   opacity: .85;
 }
 
@@ -205,6 +205,9 @@ section li:nth-child(3) {
 }
 .card{
   background-color: #9E5D2E;
+}
+.mobileCard{
+  width: 16rem;
 }
 .cardContainer{
 text-align: center;
@@ -236,9 +239,9 @@ height:40vh;
   overflow: visible;
   z-index: 1;
   position: absolute;
-  top: 325%;
+  top: 335%;
   width: 100%;
-  height:80vh;
+  height:85vh;
   opacity: .85;
 }
 
@@ -276,7 +279,7 @@ height:40vh;
 /* contact section */
 .contactForm{
   position: absolute;
-  top:430vh;
+  top:450vh;
   background: #BE6F37;
   width: 100%;
   padding-top: 2vh;
